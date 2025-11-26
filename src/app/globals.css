@@ -1,26 +1,77 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* ======== Base Theme ======== */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* 🎨 Light mode colors */
+    --color-primary: hsl(155,65%,45%);
+    --color-secondary: hsl(178, 60%, 45%);
+    --color-accent: #8c8f8e;
+    --color-warm: #d9a27f;
+    --color-light: #e5cbb3;
+    --color-dark: #2a2d2e;
+    --color-background: #F9FAFA;
+  }
+
+  /* 🌙 Dark mode */
+  .dark {
+    --color-primary: hsl(155,65%,45%);
+    --color-secondary: hsl(178, 60%, 45%);
+    --color-accent: #a5a9a8;
+    --color-warm: #c48f70;
+    --color-light: #d1bca0;
+    --color-dark: #111314;
+    --color-background: #1b1e1e;
+  }
+
+  /* 🩶 Base styles */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ======== Shadcn Bridge (simple vars) ======== */
+@layer base {
+  :root {
+    --background: var(--color-background);
+    --foreground: var(--color-dark);
+    --card: var(--color-light);
+    --card-foreground: var(--color-dark);
+    --primary: var(--color-primary);
+    --primary-foreground: white;
+    --secondary: var(--color-secondary);
+    --secondary-foreground: white;
+    --accent: var(--color-accent);
+    --muted: var(--color-accent);
+    --muted-foreground: var(--color-dark);
+    --border: var(--color-accent);
+    --input: var(--color-accent);
+    --ring: var(--color-primary);
+    --radius: 0.625rem;
+  }
+
+  .dark {
+    --background: var(--color-background);
+    --foreground: var(--color-light);
+    --card: var(--color-dark);
+    --card-foreground: var(--color-light);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-dark);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-light);
+    --accent: var(--color-accent);
+    --muted: var(--color-accent);
+    --muted-foreground: var(--color-light);
+    --border: var(--color-secondary);
+    --input: var(--color-secondary);
+    --ring: var(--color-primary);
+  }
 }

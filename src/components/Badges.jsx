@@ -1,0 +1,75 @@
+import {
+  MdVerified,
+  MdRemoveRedEye,
+  MdLockOutline,
+  MdCheckCircleOutline
+} from 'react-icons/md';
+
+const trustItems = [
+  {
+    icon: MdVerified,
+    title: '100% Verified',
+    desc: 'Every campaign verified through AI + human review',
+  },
+  {
+    icon: MdRemoveRedEye,
+    title: 'Full Transparency',
+    desc: 'Track every rupee from donation to treatment',
+  },
+  {
+    icon: MdLockOutline,
+    title: 'Secure Payments',
+    desc: 'JazzCash, EasyPaisa & bank transfers protected',
+  },
+  {
+    icon: MdCheckCircleOutline,
+    title: 'Real Impact',
+    desc: '98% of funds reach patients directly',
+  },
+];
+
+export default function Badges() {
+  return (
+    <div className="flex flex-col bg-[#EFF4F9] h-screen px-10 md:px-20">
+      <header className='flex flex-col gap-1 mt-16 items-center justify-center'>
+        <h1 className='text-4xl font-bold mt-6 py-2'>Built on <span className='bg-gradient-to-br from-blue-500 to-blue-400  bg-clip-text text-transparent bg-'>Trust</span></h1>
+        <p className='text-gray-500'>Your generosity deserves the highest standards of transparency and security</p>
+      </header>
+
+
+      <div className="flex justify-between gap-6 w-full mx-auto py-12 ">
+
+        {trustItems.map((item, index) => {
+          const Icon = item.icon;
+
+          return (
+            <div
+              key={index}
+              className="flex flex-col flex-1 items-center text-center space-y-3 bg-white rounded-2xl px-6 py-8 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-400 rounded-full flex items-center justify-center">
+                <Icon className="w-8 h-8 text-white" />
+              </div>
+
+              <h3 className="font-semibold text-lg text-gray-900">{item.title}</h3>
+              <p className="text-sm text-gray-600 font-extralight leading-tight">{item.desc}</p>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* payments panel */}
+      <div className="w-full h-30 flex justify-between bg-white rounded-2xl px-6 py-8 shadow-sm hover:shadow-md transition-shadow border-0 border-gray-300">
+        <div className="left flex flex-col gap-2">
+          <h3 className='text-xl font-semibold'>Local Payment Methods You Trust</h3>
+          <p className='text-sm text-gray-600 font-extralight '>Support with JazzCash, EasyPaisa, or direct bank transfer - familiar, fast, and secure</p>
+        </div>
+        <div className="right flex gap-3 items-center">
+          <div className='w-30 h-8 flex items-center justify-center font-medium bg-orange-300/20 text-sm text-orange-500 border border-orange-300 rounded-full'>JazzCash</div>
+          <div className='w-30 h-8 flex items-center justify-center font-medium bg-green-300/20  text-sm text-green-500 border border-green-300 rounded-full px-4'>EasyPaisa</div>
+          <div className='w-30 h-8 flex items-center justify-center font-medium bg-blue-300/20   text-sm text-blue-500 border border-blue-300 rounded-full px-4'>Other Banks</div>
+        </div>
+      </div>
+    </div>
+  );
+}
