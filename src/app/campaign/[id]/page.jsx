@@ -30,7 +30,7 @@ const campaignData = {
   raised: 250000,
   goal: 500000,
   donors: 142,
-  daysLeft: 18,
+  daysLeft: 15,
   story: `Fatima is a bright, cheerful 8-year-old who loves drawing and playing with her younger brother. Three months ago, her world turned upside down when she was diagnosed with acute lymphoblastic leukemia.
 
 Her father works as a taxi driver, and her mother is a homemaker. The family has already spent their life savings on initial tests and consultations. The cost of chemotherapy, medications, and hospital care is far beyond what they can afford.
