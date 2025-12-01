@@ -7,8 +7,8 @@ export default function FinancialStep({ formData, setFormData }) {
   return (
     <div className="space-y-8">
       <div className="flex items-center gap-4">
-        <div className="p-3 bg-teal-100 rounded-lg">
-          <DollarSign className="w-7 h-7 text-teal-600" />
+        <div className="p-3 bg-[var(--color-primary)]/10 rounded-lg">
+          <DollarSign className="w-7 h-7 text-[var(--color-primary)]/90" />
         </div>
         <h2 className="text-2xl font-bold">Financial Details</h2>
       </div>

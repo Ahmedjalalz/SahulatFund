@@ -7,8 +7,8 @@ export default function BasicInfoStep({ formData, setFormData }) {
   return (
     <div className="space-y-8">
       <div className="flex items-center gap-4">
-        <div className="p-3 bg-teal-100 rounded-lg">
-          <FileText className="w-7 h-7 text-teal-600" />
+        <div className="p-3 bg-[var(--color-primary)]/10 rounded-lg">
+          <FileText className="w-7 h-7 text-[var(--color-primary)]" />
         </div>
         <h2 className="text-2xl font-bold">Basic Information</h2>
       </div>
@@ -19,7 +19,7 @@ export default function BasicInfoStep({ formData, setFormData }) {
           <Input
             id="title"
             placeholder="e.g., Help 8-Year-Old Fatima Fight Cancer"
-            className="mt-2 text-lg"
+            className="mt-2 text-lg "
             value={formData.title || ""}
             onChange={(e) => setFormData({ ...formData, title: e.target.value })}
           />
@@ -37,13 +37,13 @@ export default function BasicInfoStep({ formData, setFormData }) {
             <SelectTrigger className="mt-2">
               <SelectValue placeholder="Select a category" />
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="cancer">Cancer Treatment</SelectItem>
-              <SelectItem value="heart">Heart Disease</SelectItem>
-              <SelectItem value="transplant">Organ Transplant</SelectItem>
-              <SelectItem value="accident">Accident & Trauma</SelectItem>
-              <SelectItem value="rare">Rare Disease</SelectItem>
-              <SelectItem value="other">Other Medical</SelectItem>
+            <SelectContent className="bg-white">
+              <SelectItem className="hover:bg-[var(--color-primary)]/10" value="cancer">Cancer Treatment</SelectItem>
+              <SelectItem className="hover:bg-[var(--color-primary)]/10" value="heart">Heart Disease</SelectItem>
+              <SelectItem className="hover:bg-[var(--color-primary)]/10" value="transplant">Organ Transplant</SelectItem>
+              <SelectItem className="hover:bg-[var(--color-primary)]/10" value="accident">Accident & Trauma</SelectItem>
+              <SelectItem className="hover:bg-[var(--color-primary)]/10" value="rare">Rare Disease</SelectItem>
+              <SelectItem className="hover:bg-[var(--color-primary)]/10" value="other">Other Medical</SelectItem>
             </SelectContent>
           </Select>
         </div>

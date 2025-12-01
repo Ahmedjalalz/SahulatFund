@@ -8,14 +8,14 @@ export default function StoryStep({ formData, setFormData }) {
   return (
     <div className="space-y-8">
       <div className="flex items-center gap-4">
-        <div className="p-3 bg-teal-100 rounded-lg">
-          <Heart className="w-7 h-7 text-teal-600" />
+        <div className="p-3 bg-[var(--color-primary)]/10 rounded-lg">
+          <Heart className="w-7 h-7 text-[var(--color-primary)]/90" />
         </div>
         <h2 className="text-2xl font-bold">Tell Your Story</h2>
       </div>
 
-      <div className="bg-teal-50 border border-teal-200 rounded-lg p-4">
-        <p className="text-sm text-teal-800 font-medium">
+      <div className="bg-teal-50 border border-[var(--color-primary)]/40 rounded-lg p-4">
+        <p className="text-sm text-[var(--color-primary)] font-medium">
           Writing tips: Be honest and emotional. Share who you are, what happened, how it affects you, and why you need help. Include personal details that make people feel connected to your journey.
         </p>
       </div>
