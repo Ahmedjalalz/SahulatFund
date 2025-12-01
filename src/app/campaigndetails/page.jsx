@@ -1,4 +1,4 @@
-import Detail from '@/components/detail'
+// import Detail from '@/components/detail'
 import Footer from '@/components/Footer'
 import Nav from '@/components/Nav'
 import React from 'react'

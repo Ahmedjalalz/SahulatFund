@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Nav() {
   return (
-    <nav className="fixed z-100 top-0 left-0 w-full h-16 bg-white/50 backdrop-blur-md flex items-center justify-between px-10 md:px-20 shadow-lg">
+    <nav className="fixed z-100 top-0 left-0 w-full h-16 bg-white/60 backdrop-blur-md flex items-center justify-between px-10 md:px-20 shadow-md">
       {/* Logo */}
       <div className="flex items-center gap-2">
        

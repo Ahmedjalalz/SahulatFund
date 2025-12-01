@@ -3,7 +3,7 @@ import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from 'react-ic
 
 function Footer() {
   return (
-    <footer className="w-full bg-gray-50 border-t border-gray-200">
+    <footer className="w-full bg-gray-50 border-t mt-16 border-gray-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-16 py-12">
 
         {/* Main Flex Container */}
