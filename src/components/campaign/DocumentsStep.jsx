@@ -1,18 +1,22 @@
+"use client";
+
 import { useRef, useState } from "react";
 import { Upload, Shield } from "lucide-react";
 
 export default function DocumentsStep({ formData, setFormData }) {
   const fileInputRef = useRef(null);
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState(formData.proofDocument || null); // preload if exists
 
   const handleFileSelect = (e) => {
     const file = e.target.files[0];
+    if (!file) return;
+
     setSelectedFile(file);
 
-    // Save to parent formData
+    // Save File object directly in formData
     setFormData((prev) => ({
       ...prev,
-      proofDocument: file || null,
+      proofDocument: file, // important: keep the File object, do NOT stringify
     }));
   };
 
