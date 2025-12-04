@@ -3,7 +3,7 @@
 const campaignsData = [
   {
     id: 1,
-    imageUrl: "/bg.png",
+    imageUrl: "/baby.webp",
     title: "Save Baby Ayesha's Heart Surgery",
     description: "6-month-old Ayesha was born with a critical heart defect. She needs life-saving surgery within weeks.",
     raised: 620000,
@@ -21,7 +21,7 @@ const campaignsData = [
   },
   {
     id: 2,
-    imageUrl: "/bg4.png",
+    imageUrl: "/baloch.jpg",
     title: "Rebuild Homes After Balochistan Floods",
     description: "Hundreds of families lost everything in recent floods. Help us provide shelter, food, and hope.",
     raised: 1850000,
@@ -39,7 +39,7 @@ const campaignsData = [
   },
   {
     id: 3,
-    imageUrl: "/pic3.jpg",
+    imageUrl: "/kidney.jpg",
     title: "Support Ahmed's Kidney Transplant",
     description: "Ahmed, a 29-year-old teacher, is on dialysis and urgently needs a kidney transplant to survive.",
     raised: 1250000,
@@ -56,7 +56,7 @@ const campaignsData = [
   },
   {
     id: 4,
-    imageUrl: "/pic4.jpg",
+    imageUrl: "/water.jpg",
     title: "Clean Water for Village Shikarpur",
     description: "300 families drink contaminated water daily. One water filtration plant can change their lives forever.",
     raised: 420000,
@@ -73,7 +73,7 @@ const campaignsData = [
   },
   {
     id: 5,
-    imageUrl: "/pic5.jpg",
+    imageUrl: "/education.jpg",
     title: "Help Zainab Continue Her Education",
     description: "Bright student from a low-income family. Your support will fund her university fees for 4 years.",
     raised: 280000,
